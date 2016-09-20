@@ -7,11 +7,21 @@ public class SavingsAccount {
 	private int accountNumber;
 	static int nextAccountNumber = 10000;
 	
-
+	
+	// konstruktor 
 	public SavingsAccount(){
 	
 		accountNumber = nextAccountNumber++;
+		balance = 0;
+		accountType = "Sparkonto";
+		intrestRent = 0.02;
+				
+	}
+	
+	// Konstruktor
+	public SavingsAccount(double startBalance){
 		
+		balance = startBalance;
 	}
 	
 	public double getBalance()
@@ -47,15 +57,7 @@ public class SavingsAccount {
 		
 	}
 	
-	//public SavingsAccount(){
-		//balance = 0;
-	//}
-	
-	public SavingsAccount(double startBalance){
-		
-		balance = startBalance;
-	}
-		
+			
 	}
 
 
