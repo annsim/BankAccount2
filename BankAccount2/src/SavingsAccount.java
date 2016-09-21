@@ -59,6 +59,13 @@ public class SavingsAccount {
 		balance = balance + amount;
 		
 	}
+	
+	public int getAccount(){
+		
+		return accountNumber;
+	}
+	
+	//Jag bestämmer att det är detta som ska skrivas ut
 	@Override
 	public String toString(){
 		return "Typ av konto: " + accountType+ "\n"+

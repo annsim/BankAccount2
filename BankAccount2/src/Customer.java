@@ -1,26 +1,25 @@
+import java.util.ArrayList;
 
-public class Customer extends SavingsAccount {
+public class Customer {
 
-	private String firstName;
-	private String lastName;
+	private String name;
 	private long persNr;
-	
-	private SavingsAccount account = new SavingsAccount();
 
-	Customer( String firstName,String lastName, long persNr,SavingsAccount account ){
+	private ArrayList<SavingsAccount>();
 	
-	this.firstName = firstName;
-	this.lastName = lastName;
+	
+	
+
+	public Customer( String name,long persNr){
+	
+	this.name = name;
 	this.persNr = persNr;
-	this.account = account;
+	
 }
-	public String toString(){
-		return
-				"Förnamn: "+firstName+"\n"+
-				"Efternamn: "+lastName+"\n"+
-				"Person nummer: "+persNr+"\n"+
-				"Konto nummer: "+account+"\n";
-				
-		
+
+	@Override
+	public String toString() {
+		return "Förnamn: " + name + "\n" + "Person nummer: " + persNr + "\n" + "Konto nummer: " + account + "\n";
+
 	}
 }
